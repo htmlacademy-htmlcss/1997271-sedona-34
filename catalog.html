@@ -36,12 +36,8 @@
               <span class="visually-hidden">Избранное</span>
             </a>
           </li>
-          <li class="navigation-list">
-            <a href="" class="navigation-link">
-              <button class="button-want-here button">Хочу сюда!</button>
-            </a>
-          </li>
         </ul>
+        <button class="button-want-here button">Хочу сюда!</button>
       </nav>
     </header>
     <main class="main-inner">
@@ -102,15 +98,14 @@
             <legend class="filter-title">Тип жилья</legend>
             <ul class="catalog-filter-list">
               <li class="catalog-filter-item">
-                <label class="filter-item-name">
-                  <input
-                    type="radio"
-                    class="checkbox-filter"
-                    name="filter-group-name"
-                    value="hotel"
-                  />
-                  Гостиница
-                </label>
+                <label class="filter-item-name"></label>
+                <input
+                  type="radio"
+                  class="checkbox-filter"
+                  name="filter-group-name"
+                  value="hotel"
+                />
+                Гостиница
               </li>
               <li class="catalog-filter-item">
                 <label class="filter-item-name">
@@ -137,7 +132,7 @@
             </ul>
           </fieldset>
           <div class="range-price-input">
-            <label for="min-max-price">Стоимость, ₽:</label>
+            <label for="min-price">Стоимость, ₽:</label>
             <input
               type="text"
               class="min-max-price min-price"
@@ -192,7 +187,12 @@
             <b class="price-of-housing">От 4000 ₽</b>
             <a href="" class="more-info-button button">Подробнее</a>
             <button class="to-favorites button-blue">В избранное</button>
-            <span class="vissualy-hidden rating-icon">Рейтинг гостиницы</span>
+            <ul class="comfort-hotel">
+              <li class="comfort-hotel-star">*</li>
+              <li class="comfort-hotel-star">*</li>
+              <li class="comfort-hotel-star">*</li>
+              <li class="comfort-hotel-star">*</li>
+            </ul>
             <b class="rating-hotel">Рейтинг: 8,5</b>
           </li>
           <li class="hotel-card">
@@ -204,7 +204,12 @@
             <b class="price-of-housing">От 5000 ₽</b>
             <a href="" class="more-info-button button">Подробнее</a>
             <button class="in-favorites button-green">В избранном</button>
-            <span class="vissualy-hidden rating-icon">Рейтинг гостиницы</span>
+            <ul class="comfort-hotel">
+              <li class="comfort-hotel-star">*</li>
+              <li class="comfort-hotel-star">*</li>
+              <li class="comfort-hotel-star">*</li>
+              <li class="comfort-hotel-star">*</li>
+            </ul>
             <b class="rating-hotel">Рейтинг: 9,2</b>
           </li>
           <li class="hotel-card">
@@ -216,7 +221,11 @@
             <b class="price-of-housing">От 2500 ₽</b>
             <a href="" class="more-info-button button">Подробнее</a>
             <button class="to-favorites button-blue">В избранное</button>
-            <span class="vissualy-hidden rating-icon">Рейтинг гостиницы</span>
+            <ul class="comfort-hotel">
+              <li class="comfort-hotel-star">*</li>
+              <li class="comfort-hotel-star">*</li>
+              <li class="comfort-hotel-star">*</li>
+            </ul>
             <b class="rating-hotel">Рейтинг: 6,9</b>
           </li>
           <li class="hotel-card">
@@ -228,7 +237,10 @@
             <b class="price-of-housing">От 1500 ₽</b>
             <a href="" class="more-info-button button">Подробнее</a>
             <button class="to-favorites button-blue">В избранное</button>
-            <span class="vissualy-hidden rating-icon">Рейтинг гостиницы</span>
+            <ul class="comfort-hotel">
+              <li class="comfort-hotel-star">*</li>
+              <li class="comfort-hotel-star">*</li>
+            </ul>
             <b class="rating-hotel">Рейтинг: 5,0</b>
           </li>
         </ul>
@@ -255,7 +267,7 @@
       </section>
     </main>
     <footer class="page-footer">
-      <section>
+      <div>
         <h2 class="visually-hidden">Мы в социальных сетях</h2>
         <ul class="footer-social-list">
           <li class="footer-social-item">
@@ -274,7 +286,7 @@
             </a>
           </li>
         </ul>
-      </section>
+      </div>
       <div class="footer-contacts">
         <h2 class="visually-hidden">Телефон для связи</h2>
         <a href="tel:+78128121212" class="footer-contacts-phone"
