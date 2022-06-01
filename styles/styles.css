@@ -1,0 +1,150 @@
+@font-face {
+  font-family: "PT Sans";
+  font-weight: 400;
+  font-size: normal;
+  src: url(../fonts/ptsans-400.woff2);
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-weight: 700;
+  font-size: normal;
+  src: url(../fonts/ptsans-700.woff2);
+  font-display: swap;
+}
+
+body {
+  font-family: "PT Sans", sans-serif;
+  background-color: #e4e2e2;
+}
+
+/*Кнопка коричневый цвет*/
+.button {
+  font-family: inherit;
+  text-align: center;
+  color: #ffffff;
+  background-color: #756157;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.button-blue {
+  font-family: inherit;
+  text-align: center;
+  color: #ffffff;
+  background-color: #82b3d3;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+/*Ссылки навигации в header*/
+.navigation-link {
+  font-weight: 700;
+  font-size: 20px;
+  color: #000000;
+  text-decoration: none;
+  text-align: center;
+  text-decoration: none;
+  line-height: 26px;
+}
+
+/*Кнопка "Хочу сюда"*/
+.button-want-here {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 8px;
+  padding-top: 8px;
+}
+
+/*Фон добро пожаловать в седону*/
+.welcome-sedona {
+  background-image: url(/images/index-background.jpg);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+/*Заголовок "О седоне"*/
+.about-sedona {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+}
+/*Описание в приветствии*/
+.description-five-advantage {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  color: #333333;
+}
+/*Список преимуществ первый и второй блок*/
+.advantage-sedona {
+  background: #82b3d3;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+}
+/*описание преимуществ*/
+.description-number,
+.advantage-description {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+}
+/*фон списка*/
+.advantage-item-first,
+.advantage-item-third {
+  background: rgba(131, 179, 211, 0.12);
+}
+
+.advantage-item-second {
+  background: #ffffff;
+}
+
+.advantage-item-second-dark {
+  background: rgba(131, 179, 211, 0.2);
+}
+/*секция поиска отеля*/
+.search-hotel-title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+}
+.search-hotel-desc {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+}
+/*подписка на рассылку*/
+
+.subscribe {
+  background-image: url(../images/background-subscribe.jpg);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+.subscribe-descr {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  color: #ffffff;
+}
+/*кнопка подписаться*/
+.button-subscribe {
+  font-family: "PT Sans";
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+}
+
+/*подвал*/
+.footer-contacts-phone {
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 40px;
+  color: #000000;
+  text-decoration: none;
+}
