@@ -1,0 +1,355 @@
+@font-face {
+  font-family: "PT Sans";
+  font-weight: 400;
+  font-size: normal;
+  src: url(../fonts/ptsans-400.woff2);
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-weight: 700;
+  font-size: normal;
+  src: url(../fonts/ptsans-700.woff2);
+  font-display: swap;
+}
+
+body {
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.welcome-sedona {
+  text-align: center;
+}
+
+/*Кнопка коричневый цвет*/
+
+.button {
+  font-family: inherit;
+  text-align: center;
+  color: #ffffff;
+  background-color: #756157;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+/*голубая кнопка*/
+
+.button-blue {
+  font-family: inherit;
+  text-align: center;
+  color: #ffffff;
+  background-color: #82b3d3;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+/*зеленая кнопка*/
+
+.button-green {
+  font-family: inherit;
+  text-align: center;
+  color: #ffffff;
+  background-color: #7db54f;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+}
+/*Ссылки навигации в header*/
+
+.navigation-link {
+  font-weight: 700;
+  font-size: 20px;
+  color: #000000;
+  text-decoration: none;
+  text-align: center;
+  text-decoration: none;
+  line-height: 26px;
+}
+
+/*Кнопка "Хочу сюда"*/
+
+.button-want-here {
+  color: #ffffff;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 8px;
+  padding-top: 8px;
+}
+
+/*Фон добро пожаловать в седону*/
+.welcome-sedona {
+  background-image: url(/images/index-background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #4075a3;
+  color: #ffffff;
+}
+
+/*Заголовок "О седоне"*/
+
+.about-sedona {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+}
+
+/*Описание в приветствии*/
+
+.description-five-advantage {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  color: #333333;
+  text-align: center;
+}
+
+/*Список преимуществ первый и второй блок*/
+
+.advantage-list {
+  text-align: center;
+}
+.advantage-sedona {
+  background: #82b3d3;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.advantage-description {
+  color: #333333;
+}
+
+.advantage-description-block,
+.description-number {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+}
+/*фон списка*/
+
+.advantage-item-first,
+.advantage-item-third {
+  background: rgba(131, 179, 211, 0.12);
+}
+
+.advantage-item-second-dark {
+  background: rgba(131, 179, 211, 0.2);
+}
+
+/*секция поиска отеля*/
+
+.search-hotel {
+  text-align: center;
+}
+.search-hotel-title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+}
+.search-hotel-descr {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+}
+
+.button-search-hotel {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+}
+
+/*подписка на рассылку*/
+
+.subscribe-catalog {
+  text-align: center;
+}
+
+.subscribe-title-catalog {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  color: #000000;
+}
+
+.subscribe-descr-catalog {
+  color: #000000;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+  color: #333333;
+}
+
+.subscribe {
+  background-image: url(../images/background-subscribe.jpg);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  text-align: center;
+  background-color: #4075a3;
+  color: #ffffff;
+}
+
+.subscribe-title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  color: #ffffff;
+}
+
+.subscribe-descr {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  color: #ffffff;
+}
+
+/*кнопка подписаться*/
+.button-subscribe {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+}
+
+/*подвал*/
+.footer-contacts-phone {
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 40px;
+  color: #000000;
+  text-decoration: none;
+  text-align: center;
+}
+
+/*каталог*/
+.backgroung-img-header-inner {
+  background-image: url(../images/catalog/filter-background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #4075a3;
+  color: #ffffff;
+}
+/*заголовок каталога*/
+.header-inner-title {
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 78px;
+  color: #ffffff;
+}
+/*хлебные крошки*/
+.breadcrums {
+  color: #ffffff;
+}
+
+.breadcrumbs-link {
+  color: inherit;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+}
+/*фильтрация*/
+.filter-content {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+}
+
+.filter-group-label {
+  font-weight: 400;
+}
+/*кнопка применить*/
+.button-apply {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+}
+/*кнопка сбросить форму*/
+.reset-form {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+}
+/*резульат фильтра*/
+.search-results {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  color: #000000;
+}
+/*отображение карточек на странице*/
+.select-filter {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #333333;
+}
+
+/*карточки гостиниц*/
+
+.hotel-card-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.hotel-card-link {
+  text-decoration: none;
+  color: #000000;
+}
+
+.type-of-housing,
+.price-of-housing {
+  font-weight: 400;
+}
+
+.rating-hotel {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/*пагинация*/
+
+.pagination-item-link {
+  color: #ffffff;
+  background-color: #82b3d3;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+}
+
+.pagination-item-link-current {
+  color: #000000;
+  background-color: #f2f2f2;
+}
+
+.count-title {
+  font-weight: 400;
+  color: #333333;
+}
+
+.select-filter-count {
+  font-weight: 400;
+  color: #333333;
+}
