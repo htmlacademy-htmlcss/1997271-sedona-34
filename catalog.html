@@ -72,7 +72,7 @@
           >
             <!--Фильтр по инфраструктуре-->
             <fieldset class="filter-group">
-              <legend class="filter-title">Инфраструктура</legend>
+              <legend class="filter-title">Инфраструктура:</legend>
               <ul class="catalog-filter-list">
                 <li class="catalog-filter-item">
                   <label class="filter-item-name">
@@ -113,7 +113,7 @@
             </fieldset>
             <!--Фильтр по типу жилья-->
             <fieldset class="filter-group">
-              <legend class="filter-title">Тип жилья</legend>
+              <legend class="filter-title">Тип жилья:</legend>
               <ul class="catalog-filter-list">
                 <li class="catalog-filter-item">
                   <label class="filter-item-name">
@@ -175,7 +175,7 @@
               </label>
               <div class="range"></div>
             </fieldset>
-            <button class="button-blue button-apply button-blue" type="submit">
+            <button class="button button-apply button-blue" type="submit">
               Применить
             </button>
             <button class="reset-form" type="reset">Сбросить</button>
@@ -301,15 +301,14 @@
         </ul>
         <!--Пагинация-->
         <ul class="pagination">
-          <li class="pagination-item button-blue">
+          <li class="pagination-item button-pagination">
             <a
-              class="pagination-item-link"
-              href="#"
+              class="pagination-item-link pagination-item-link-current"
               aria-label="Первая страница"
               >1</a
             >
           </li>
-          <li class="pagination-item button-blue">
+          <li class="pagination-item button-pagination">
             <a
               class="pagination-item-link"
               href="#"
@@ -317,7 +316,7 @@
               >2</a
             >
           </li>
-          <li class="pagination-item button-blue">
+          <li class="pagination-item button-pagination">
             <a
               class="pagination-item-link"
               href="#"
@@ -325,7 +324,7 @@
               >3</a
             >
           </li>
-          <li class="pagination-item button-blue">
+          <li class="pagination-item button-pagination">
             <a
               class="pagination-item-link"
               href="#"
@@ -333,10 +332,10 @@
               >4</a
             >
           </li>
-          <li class="pagination-item button-blue">
-            <span class="pagination-item">...</span>
+          <li class="pagination-item button-pagination">
+            <span class="pagination-item-link">...</span>
           </li>
-          <li class="pagination-item button-blue">
+          <li class="pagination-item button-pagination">
             <a
               class="pagination-item-link"
               href="#"
@@ -350,7 +349,7 @@
           >Гостиниц на странице:
         </label>
         <select
-          class="select-filter count"
+          class="select-filter-count"
           aria-label="Количество отображаемых карточек"
           id="select-count"
         >
@@ -360,9 +359,9 @@
         </select>
       </section>
       <!--Подписка на рассылку-->
-      <section class="subscribe">
-        <h2 class="subscribe">Подпишитесь на рассылку</h2>
-        <p class="subscribe-descr">
+      <section class="subscribe-catalog">
+        <h2 class="subscribe-title-catalog">Подпишитесь на рассылку</h2>
+        <p class="subscribe-descr-catalog">
           Только полезная информация и никакого спама, честное бойскаутское!
         </p>
         <form
@@ -376,7 +375,7 @@
             placeholder="email@example.ru"
             aria-label="Ваш email"
           />
-          <button class="buttons-subscribe button-blue" type="submit">
+          <button class="button-subscribe button-blue" type="submit">
             Подписаться
           </button>
         </form>
