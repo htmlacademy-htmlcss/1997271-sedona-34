@@ -91,10 +91,9 @@ body {
 
 /*Фон добро пожаловать в седону*/
 .welcome-sedona {
-  background-image: url(/images/index-background.jpg);
+  background-image: url(./images/index-background.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  background-color: #4075a3;
   color: #ffffff;
 }
 
