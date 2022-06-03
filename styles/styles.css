@@ -2,7 +2,7 @@
   font-family: "PT Sans";
   font-weight: 400;
   font-size: normal;
-  src: url(../fonts/ptsans-400.woff2);
+  src: url("../fonts/ptsans-400.woff2");
   font-display: swap;
 }
 
@@ -10,16 +10,43 @@
   font-family: "PT Sans";
   font-weight: 700;
   font-size: normal;
-  src: url(../fonts/ptsans-700.woff2);
+  src: url("../fonts/ptsans-700.woff2");
   font-display: swap;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  white-space: nowrap;
+  border: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(100%);
+}
+
+.page-wrapper {
+  width: 1200px;
+  margin: 0 auto;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  background-color: #ffffff;
+}
+
 body {
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", Arial, sans-serif;
   font-size: 18px;
   line-height: 21px;
-  background-color: #ffffff;
+  background-color: #f2f2f2;
   color: #000000;
+  margin: 0;
+  padding: 0;
 }
 
 .welcome-sedona {
@@ -29,7 +56,6 @@ body {
 /*Кнопка коричневый цвет*/
 
 .button {
-  font-family: inherit;
   text-align: center;
   color: #ffffff;
   background-color: #756157;
@@ -43,7 +69,6 @@ body {
 /*голубая кнопка*/
 
 .button-blue {
-  font-family: inherit;
   text-align: center;
   color: #ffffff;
   background-color: #82b3d3;
@@ -57,7 +82,6 @@ body {
 /*зеленая кнопка*/
 
 .button-green {
-  font-family: inherit;
   text-align: center;
   color: #ffffff;
   background-color: #7db54f;
@@ -67,7 +91,12 @@ body {
   font-size: 16px;
   line-height: 20px;
 }
+
 /*Ссылки навигации в header*/
+
+.navigation-list {
+  list-style: none;
+}
 
 .navigation-link {
   font-weight: 700;
@@ -91,9 +120,10 @@ body {
 
 /*Фон добро пожаловать в седону*/
 .welcome-sedona {
-  background-image: url(./images/index-background.jpg);
+  background-image: url("../images/index-background.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  background-color: #73a4c7;
   color: #ffffff;
 }
 
@@ -109,7 +139,6 @@ body {
 /*Описание в приветствии*/
 
 .description-five-advantage {
-  font-weight: 400;
   font-size: 22px;
   line-height: 26px;
   color: #333333;
@@ -120,35 +149,45 @@ body {
 
 .advantage-list {
   text-align: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 }
+
+.advantage-list .advantage-item:nth-child(odd) {
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
+.advantage-list-modify .advantage-item {
+  background: rgba(131, 179, 211, 0.2);
+}
+
+.advantage-item {
+  padding: 60px;
+}
+
 .advantage-sedona {
   background: #82b3d3;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 28px;
   color: #ffffff;
   text-align: center;
 }
 
+.advantages-title {
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+
+.advantage-sedona-title {
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+
 .advantage-description {
   color: #333333;
-}
-
-.advantage-description-block,
-.description-number {
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 21px;
-}
-/*фон списка*/
-
-.advantage-item-first,
-.advantage-item-third {
-  background: rgba(131, 179, 211, 0.12);
-}
-
-.advantage-item-second-dark {
-  background: rgba(131, 179, 211, 0.2);
 }
 
 /*секция поиска отеля*/
@@ -156,13 +195,14 @@ body {
 .search-hotel {
   text-align: center;
 }
+
 .search-hotel-title {
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
 }
-.search-hotel-descr {
-  font-weight: 400;
+
+.search-hotel-description {
   font-size: 22px;
   line-height: 26px;
 }
@@ -180,27 +220,22 @@ body {
 }
 
 .subscribe-title-catalog {
-  font-weight: 700;
   font-size: 30px;
   line-height: 36px;
-  color: #000000;
 }
 
 .subscribe-descr-catalog {
-  color: #000000;
-  font-weight: 400;
   font-size: 22px;
   line-height: 26px;
-  text-align: center;
   color: #333333;
 }
 
 .subscribe {
-  background-image: url(../images/background-subscribe.jpg);
+  background-image: url("../images/background-subscribe.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
   text-align: center;
-  background-color: #4075a3;
+  background-color: #73a4c7;
   color: #ffffff;
 }
 
@@ -212,7 +247,6 @@ body {
 }
 
 .subscribe-descr {
-  font-weight: 400;
   font-size: 22px;
   line-height: 26px;
   color: #ffffff;
@@ -226,8 +260,11 @@ body {
 }
 
 /*подвал*/
+.footer-social-list {
+  list-style: none;
+}
+
 .footer-contacts-phone {
-  font-weight: 400;
   font-size: 40px;
   line-height: 40px;
   color: #000000;
@@ -237,12 +274,13 @@ body {
 
 /*каталог*/
 .backgroung-img-header-inner {
-  background-image: url(../images/catalog/filter-background.jpg);
+  background-image: url("../images/catalog/filter-background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: #4075a3;
+  background-color: #73a4c7;
   color: #ffffff;
 }
+
 /*заголовок каталога*/
 .header-inner-title {
   font-weight: 700;
@@ -250,41 +288,46 @@ body {
   line-height: 78px;
   color: #ffffff;
 }
+
 /*хлебные крошки*/
 .breadcrums {
   color: #ffffff;
 }
 
 .breadcrumbs-link {
-  color: inherit;
-  font-weight: 400;
   font-size: 16px;
   line-height: 21px;
 }
+
 /*фильтрация*/
 .filter-content {
   color: #ffffff;
-  font-weight: 700;
   font-size: 20px;
   line-height: 26px;
 }
 
-.filter-group-label {
-  font-weight: 400;
+.catalog-filter-list {
+  list-style: none;
 }
+
+.filter-title {
+  font-weight: 700;
+}
+
 /*кнопка применить*/
 .button-apply {
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
 }
+
 /*кнопка сбросить форму*/
 .reset-form {
-  font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   text-align: center;
 }
+
 /*резульат фильтра*/
 .search-results {
   font-weight: 700;
@@ -293,18 +336,26 @@ body {
   text-transform: uppercase;
   color: #000000;
 }
+
 /*отображение карточек на странице*/
 .select-filter {
-  font-weight: 400;
   font-size: 18px;
   line-height: 21px;
   color: #333333;
 }
 
+.list-display {
+  list-style: none;
+}
+
 /*карточки гостиниц*/
+.hotel-card-list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
 
 .hotel-card-title {
-  font-weight: 700;
   font-size: 24px;
   line-height: 28px;
 }
@@ -314,13 +365,7 @@ body {
   color: #000000;
 }
 
-.type-of-housing,
-.price-of-housing {
-  font-weight: 400;
-}
-
 .rating-hotel {
-  font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   text-align: center;
@@ -328,6 +373,9 @@ body {
 }
 
 /*пагинация*/
+.pagination {
+  list-style: none;
+}
 
 .pagination-item-link {
   color: #ffffff;
@@ -344,11 +392,9 @@ body {
 }
 
 .count-title {
-  font-weight: 400;
   color: #333333;
 }
 
 .select-filter-count {
-  font-weight: 400;
   color: #333333;
 }
