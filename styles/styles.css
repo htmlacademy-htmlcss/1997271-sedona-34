@@ -20,6 +20,10 @@
   box-sizing: border-box;
 }
 
+html {
+  height: 100%;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -40,6 +44,9 @@
 }
 
 body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 18px;
   line-height: 21px;
@@ -47,6 +54,10 @@ body {
   color: #000000;
   margin: 0;
   padding: 0;
+}
+
+.main-container {
+  flex-grow: 1;
 }
 
 .welcome-sedona {
@@ -94,8 +105,32 @@ body {
 
 /*Ссылки навигации в header*/
 
+.page-header {
+  display: flex;
+  width: 1200px;
+}
+
+.navigation {
+  display: flex;
+  margin: 0 auto;
+}
+
 .navigation-list {
+  display: flex;
+  align-items: center;
   list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 460px;
+}
+
+.navigation-user {
+  max-width: 300px;
+  margin-left: auto;
+}
+
+.navigation-items:not(:last-child) {
+  padding-right: 30px;
 }
 
 .navigation-link {
@@ -147,14 +182,14 @@ body {
 
 /*Список преимуществ первый и второй блок*/
 
-.advantage-list {
+/*.advantage-list {
   text-align: center;
   margin: 0;
   padding: 0;
   list-style: none;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-}
+}*/
 
 .advantage-list .advantage-item:nth-child(odd) {
   background-color: rgba(131, 179, 211, 0.12);
@@ -349,11 +384,11 @@ body {
 }
 
 /*карточки гостиниц*/
-.hotel-card-list {
+/*.hotel-card-list {
   list-style: none;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-}
+}*/
 
 .hotel-card-title {
   font-size: 24px;
