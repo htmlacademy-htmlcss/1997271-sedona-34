@@ -107,7 +107,6 @@ body {
 
 .page-header {
   display: flex;
-  width: 1200px;
 }
 
 .navigation {
@@ -182,14 +181,18 @@ body {
 
 /*Список преимуществ первый и второй блок*/
 
-/*.advantage-list {
+.advantage-sedona {
+  display: flex;
+}
+
+.advantage-list {
   text-align: center;
   margin: 0;
   padding: 0;
   list-style: none;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-}*/
+  display: flex;
+  flex-wrap: wrap;
+}
 
 .advantage-list .advantage-item:nth-child(odd) {
   background-color: rgba(131, 179, 211, 0.12);
@@ -200,7 +203,7 @@ body {
 }
 
 .advantage-item {
-  padding: 60px;
+  width: 400px;
 }
 
 .advantage-sedona {
@@ -212,6 +215,7 @@ body {
 .advantages-title {
   font-size: 24px;
   line-height: 28px;
+  font-weight: 700;
   text-transform: uppercase;
 }
 
@@ -272,6 +276,9 @@ body {
   text-align: center;
   background-color: #73a4c7;
   color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  height: 411px;
 }
 
 .subscribe-title {
