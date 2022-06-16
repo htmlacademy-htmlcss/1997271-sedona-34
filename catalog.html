@@ -317,69 +317,75 @@
             </ul>
           </div>
           <!--Пагинация-->
-
-          <ul class="pagination">
-            <li class="pagination-item button-pagination">
-              <a
-                class="pagination-item-link pagination-item-link-current"
-                aria-label="Первая страница"
-                >1</a
+          <div class="flex-pagination">
+            <ul class="pagination">
+              <li class="pagination-item button-pagination">
+                <a
+                  class="pagination-item-link pagination-item-link-current"
+                  aria-label="Первая страница"
+                  >1</a
+                >
+              </li>
+              <li class="pagination-item button-pagination">
+                <a
+                  class="pagination-item-link"
+                  href="#"
+                  aria-label="Вторая страница"
+                  >2</a
+                >
+              </li>
+              <li class="pagination-item button-pagination">
+                <a
+                  class="pagination-item-link"
+                  href="#"
+                  aria-label="Третья страница"
+                  >3</a
+                >
+              </li>
+              <li class="pagination-item button-pagination">
+                <a
+                  class="pagination-item-link"
+                  href="#"
+                  aria-label="Четвертая страница"
+                  >4</a
+                >
+              </li>
+              <li class="pagination-item button-pagination">
+                <span class="pagination-item-link">...</span>
+              </li>
+              <li class="pagination-item button-pagination">
+                <a
+                  class="pagination-item-link"
+                  href="#"
+                  aria-label="Десятая страница"
+                  >10</a
+                >
+              </li>
+            </ul>
+            <!--Количество отображаемых элементов на странице-->
+            <div class="count-right">
+              <label class="count-title" for="select-count"
+                >Гостиниц на странице:
+              </label>
+              <select
+                class="select-filter-count"
+                aria-label="Количество отображаемых карточек"
+                id="select-count"
               >
-            </li>
-            <li class="pagination-item button-pagination">
-              <a
-                class="pagination-item-link"
-                href="#"
-                aria-label="Вторая страница"
-                >2</a
-              >
-            </li>
-            <li class="pagination-item button-pagination">
-              <a
-                class="pagination-item-link"
-                href="#"
-                aria-label="Третья страница"
-                >3</a
-              >
-            </li>
-            <li class="pagination-item button-pagination">
-              <a
-                class="pagination-item-link"
-                href="#"
-                aria-label="Четвертая страница"
-                >4</a
-              >
-            </li>
-            <li class="pagination-item button-pagination">
-              <span class="pagination-item-link">...</span>
-            </li>
-            <li class="pagination-item button-pagination">
-              <a
-                class="pagination-item-link"
-                href="#"
-                aria-label="Десятая страница"
-                >10</a
-              >
-            </li>
-          </ul>
-          <!--Количество отображаемых элементов на странице-->
-          <label class="count-title" for="select-count"
-            >Гостиниц на странице:
-          </label>
-          <select
-            class="select-filter-count"
-            aria-label="Количество отображаемых карточек"
-            id="select-count"
-          >
-            <option class="select-filter-item-count" value="four">4</option>
-            <option class="select-filter-item-count" value="ten">10</option>
-            <option class="select-filter-item-count" value="fifteen">15</option>
-          </select>
+                <option class="select-filter-item-count" value="four">4</option>
+                <option class="select-filter-item-count" value="ten">10</option>
+                <option class="select-filter-item-count" value="fifteen">
+                  15
+                </option>
+              </select>
+            </div>
+          </div>
         </section>
         <!--Подписка на рассылку-->
-        <section class="subscribe-catalog">
-          <h2 class="subscribe-title-catalog">Подпишитесь на рассылку</h2>
-          <p class="subscribe-descr-catalog">
+
+        <section class="subscribe">
+          <h2 class="subscribe-title catalog">Подпишитесь на рассылку</h2>
+          <p class="subscribe-descriprtion catalog">
             Только полезная информация и никакого спама, честное бойскаутское!
           </p>
           <form
@@ -403,13 +409,25 @@
       <footer class="page-footer">
         <ul class="footer-social-list">
           <li class="footer-social-item">
-            <a href="#" aria-label="Мы в Вконтакте"></a>
+            <a
+              class="footer-social-link"
+              href="#"
+              aria-label="Мы в Телеграмм"
+            ></a>
           </li>
           <li class="footer-social-item">
-            <a href="#" aria-label="Мы в Телеграмм"></a>
+            <a
+              class="footer-social-link"
+              href="#"
+              aria-label="Мы в Телеграмм"
+            ></a>
           </li>
           <li class="footer-social-item">
-            <a href="#" aria-label="Мы в Ютуб Канале"></a>
+            <a
+              class="footer-social-link"
+              href="#"
+              aria-label="Мы в Телеграмм"
+            ></a>
           </li>
         </ul>
         <a

@@ -70,11 +70,13 @@
           <!--Перый список-->
           <div class="advantage-sedona">
             <div class="advantage-item">
-              <h3 class="advantages-title">Настоящий городок</h3>
-              <span class="description-number">—№1—</span>
-              <p class="advantage-description-block">
-                Седона — не аттракцион для туристов, там течёт своя жизнь
-              </p>
+              <div class="text-wrapper">
+                <h3 class="advantages-title">Настоящий городок</h3>
+                <span class="description-number">—№1—</span>
+                <p class="advantage-description-block">
+                  Седона — не аттракцион для туристов, там течёт своя жизнь
+                </p>
+              </div>
             </div>
             <img
               src="images/advantage-1.jpg"
@@ -85,23 +87,29 @@
           </div>
           <ul class="advantage-list">
             <li class="advantage-item">
-              <h3 class="advantages-title">Жильё</h3>
-              <p class="advantage-description">
-                Рекомендуем пожить в настоящем мотеле, всё как в кино!
-              </p>
+              <div class="text-wrapper">
+                <h3 class="advantages-title home">Жильё</h3>
+                <p class="advantage-description">
+                  Рекомендуем пожить в настоящем мотеле, всё как в кино!
+                </p>
+              </div>
             </li>
             <li class="advantage-item">
-              <h3 class="advantages-title">Еда</h3>
-              <p class="advantage-description">
-                Всегда заказывайте топовый фирменный бургер, вы не
-                разочаруетесь!
-              </p>
+              <div class="text-wrapper">
+                <h3 class="advantages-title">Еда</h3>
+                <p class="advantage-description">
+                  Всегда заказывайте топовый фирменный бургер, вы не
+                  разочаруетесь!
+                </p>
+              </div>
             </li>
             <li class="advantage-item">
-              <h3 class="advantages-title">Сувениры</h3>
-              <p class="advantage-description">
-                Не только китайского, но и настоящего местного производства!
-              </p>
+              <div class="text-wrapper">
+                <h3 class="advantages-title">Сувениры</h3>
+                <p class="advantage-description">
+                  Не только китайского, но и настоящего местного производства!
+                </p>
+              </div>
             </li>
           </ul>
           <!--Второй список-->
@@ -113,34 +121,46 @@
               alt="Мост дьявола."
             />
             <div class="advantage-item">
-              <h3 class="advantages-title">Там есть мост Дьявола</h3>
-              <span class="description-number">—№2—</span>
-              <p class="advantage-description-block">
-                Да, по нему можно пройти! Если вы осмелитесь, разумеется
-              </p>
+              <div class="text-wrapper">
+                <h3 class="advantages-title">Там есть мост Дьявола</h3>
+                <span class="description-number">—№2—</span>
+                <p class="advantage-description-block">
+                  Да, по нему можно пройти! Если вы осмелитесь, разумеется
+                </p>
+              </div>
             </div>
           </div>
           <ul class="advantage-list advantage-list-modify">
             <li class="advantage-item">
-              <h3 class="advantages-title">Небольшая площадь</h3>
-              <span class="description-number">—№3—</span>
-              <p class="advantage-description">
-                Все достопримечательности находятся очень близко
-              </p>
+              <div class="text-wrapper">
+                <h3 class="advantages-title">Небольшая площадь</h3>
+                <span class="description-number">—№3—</span>
+                <p class="advantage-description">
+                  Все достопримечательности находятся очень близко
+                </p>
+              </div>
             </li>
             <li class="advantage-item">
-              <h3 class="advantages-title">Красивая дорога</h3>
-              <span class="description-number">—№4—</span>
-              <p class="advantage-description">
-                Ехать в Седону из Лас-Вегаса совсем не скучно!
-              </p>
+              <div class="text-wrapper">
+                <h3 class="advantages-title">
+                  Красивая <br />
+                  дорога
+                </h3>
+
+                <span class="description-number">—№4—</span>
+                <p class="advantage-description">
+                  Ехать в Седону из Лас-Вегаса совсем не скучно!
+                </p>
+              </div>
             </li>
             <li class="advantage-item">
-              <h3 class="advantages-title">Красивая дорога</h3>
-              <span class="description-number">—№5—</span>
-              <p class="advantage-description">
-                Большинство едет в Гранд Каньон и толпится там
-              </p>
+              <div class="text-wrapper">
+                <h3 class="advantages-title">Мало <br />туристов</h3>
+                <span class="description-number">—№5—</span>
+                <p class="advantage-description">
+                  Большинство едет в Гранд Каньон и толпится там
+                </p>
+              </div>
             </li>
           </ul>
         </section>
@@ -156,12 +176,11 @@
           </a>
         </section>
         <!--Подписка на рассылку-->
-        <section class="subscribe">
-          <div class="flex-container-subscribe">
+        <div class="subscribe-background">
+          <section class="subscribe">
             <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
             <p class="subscribe-descriprtion">
-              Только полезная информация и никакого спама,<br />
-              честное бойскаутское!
+              Только полезная информация и никакого спама, честное бойскаутское!
             </p>
             <form
               class="subscribe-form"
@@ -169,6 +188,7 @@
               method="post"
             >
               <input
+                class="input-text"
                 type="text"
                 name="subscribe-email"
                 placeholder="email@example.ru"
@@ -178,20 +198,32 @@
                 Подписаться
               </button>
             </form>
-          </div>
-        </section>
+          </section>
+        </div>
       </main>
       <!--Подвал-->
       <footer class="page-footer">
         <ul class="footer-social-list">
           <li class="footer-social-item">
-            <a href="#" aria-label="Мы в Вконтакте"></a>
+            <a
+              class="footer-social-link"
+              href="#"
+              aria-label="Мы в Телеграмм"
+            ></a>
           </li>
           <li class="footer-social-item">
-            <a href="#" aria-label="Мы в Телеграмм"></a>
+            <a
+              class="footer-social-link"
+              href="#"
+              aria-label="Мы в Телеграмм"
+            ></a>
           </li>
           <li class="footer-social-item">
-            <a href="#" aria-label="Мы в Ютуб Канале"></a>
+            <a
+              class="footer-social-link"
+              href="#"
+              aria-label="Мы в Телеграмм"
+            ></a>
           </li>
         </ul>
         <a
