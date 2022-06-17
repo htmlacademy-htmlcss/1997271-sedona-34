@@ -227,6 +227,10 @@ body {
   grid-template-columns: 1fr 2fr;
 }
 
+.advantage-image {
+  object-fit: cover;
+}
+
 .advantage-sedona-reverse {
   grid-template-columns: 2fr 1fr;
 }
