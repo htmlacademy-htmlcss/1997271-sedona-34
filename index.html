@@ -9,17 +9,15 @@
     <div class="page-wrapper">
       <!--Шапка сайта-->
       <header class="page-header">
-        <div class="logo-main">
-          <a class="navigation-logo" href="index.html">
-            <img
-              class="page-logo"
-              src="images/logo-main.svg"
-              width="139"
-              height="70"
-              alt="Логотип Седоны."
-            />
-          </a>
-        </div>
+        <a class="navigation-logo" href="index.html">
+          <img
+            class="page-logo"
+            src="images/logo-main.svg"
+            width="139"
+            height="70"
+            alt="Логотип Седоны."
+          />
+        </a>
         <nav class="navigation">
           <ul class="navigation-list">
             <li class="navigation-items">
@@ -48,7 +46,7 @@
         </nav>
       </header>
       <!--Основное содержимое-->
-      <main class="page-main main-container">
+      <main class="page-main">
         <section class="welcome-sedona">
           <h1 class="visually-hidden">Сайт города Седона</h1>
           <img
@@ -61,24 +59,23 @@
         </section>
         <!--Приветствие-->
         <section class="advantage">
-          <h2 class="about-sedona">
+          <h2 class="about-sedona-title">
             Седона — небольшой городок в Аризоне, заслуживающий большего!
           </h2>
           <p class="description-five-advantage">
             Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!
           </p>
-          <!--Перый список-->
+          <!--Первый список-->
           <div class="advantage-sedona">
-            <div class="advantage-item">
-              <div class="text-wrapper">
-                <h3 class="advantages-title">Настоящий городок</h3>
-                <span class="description-number">—№1—</span>
-                <p class="advantage-description-block">
-                  Седона — не аттракцион для туристов, там течёт своя жизнь
-                </p>
-              </div>
+            <div class="advantage-card-item">
+              <h3 class="advantages-card-title">Настоящий городок</h3>
+              <span class="description-card-number">—№1—</span>
+              <p class="advantage-card-description">
+                Седона — не аттракцион для туристов, там течёт своя жизнь
+              </p>
             </div>
             <img
+              class="advantage-image"
               src="images/advantage-1.jpg"
               width="800"
               height="384"
@@ -87,80 +84,62 @@
           </div>
           <ul class="advantage-list">
             <li class="advantage-item">
-              <div class="text-wrapper">
-                <h3 class="advantages-title home">Жильё</h3>
-                <p class="advantage-description">
-                  Рекомендуем пожить в настоящем мотеле, всё как в кино!
-                </p>
-              </div>
+              <h3 class="advantages-title home">Жильё</h3>
+              <p class="advantage-description">
+                Рекомендуем пожить в настоящем мотеле, всё как в кино!
+              </p>
             </li>
             <li class="advantage-item">
-              <div class="text-wrapper">
-                <h3 class="advantages-title">Еда</h3>
-                <p class="advantage-description">
-                  Всегда заказывайте топовый фирменный бургер, вы не
-                  разочаруетесь!
-                </p>
-              </div>
+              <h3 class="advantages-title">Еда</h3>
+              <p class="advantage-description">
+                Всегда заказывайте топовый фирменный бургер, вы не
+                разочаруетесь!
+              </p>
             </li>
             <li class="advantage-item">
-              <div class="text-wrapper">
-                <h3 class="advantages-title">Сувениры</h3>
-                <p class="advantage-description">
-                  Не только китайского, но и настоящего местного производства!
-                </p>
-              </div>
+              <h3 class="advantages-title">Сувениры</h3>
+              <p class="advantage-description">
+                Не только китайского, но и настоящего местного производства!
+              </p>
             </li>
           </ul>
           <!--Второй список-->
-          <div class="advantage-sedona">
+          <div class="advantage-sedona advantage-sedona-reverse">
             <img
-              src="images/advantage-2.jpg"
+              src="images/advantage-1.jpg"
               width="800"
               height="384"
-              alt="Мост дьявола."
+              alt="Городок Седона."
             />
-            <div class="advantage-item">
-              <div class="text-wrapper">
-                <h3 class="advantages-title">Там есть мост Дьявола</h3>
-                <span class="description-number">—№2—</span>
-                <p class="advantage-description-block">
-                  Да, по нему можно пройти! Если вы осмелитесь, разумеется
-                </p>
-              </div>
+            <div class="advantage-card-item">
+              <h3 class="advantages-card-title">Там есть мост дьявола</h3>
+              <span class="description-card-number">—№2—</span>
+              <p class="advantage-card-description">
+                Да, по нему можно пройти! Если вы осмелитесь, разумеется
+              </p>
             </div>
           </div>
           <ul class="advantage-list advantage-list-modify">
-            <li class="advantage-item">
-              <div class="text-wrapper">
-                <h3 class="advantages-title">Небольшая площадь</h3>
-                <span class="description-number">—№3—</span>
-                <p class="advantage-description">
-                  Все достопримечательности находятся очень близко
-                </p>
-              </div>
+            <li class="advantage-item advantage-item-modify">
+              <h3 class="advantages-title">Небольшая площадь</h3>
+              <span class="description-number">—№3—</span>
+              <p class="advantage-description">
+                Все достопримечательности находятся очень близко
+              </p>
             </li>
-            <li class="advantage-item">
-              <div class="text-wrapper">
-                <h3 class="advantages-title">
-                  Красивая <br />
-                  дорога
-                </h3>
-
-                <span class="description-number">—№4—</span>
-                <p class="advantage-description">
-                  Ехать в Седону из Лас-Вегаса совсем не скучно!
-                </p>
-              </div>
+            <li class="advantage-item advantage-item-modify">
+              <h3 class="advantages-title">Красивая дорога</h3>
+              <span class="description-number">—№4—</span>
+              <p class="advantage-description">
+                Ехать в Седону из Лас-Вегаса совсем не скучно!
+              </p>
             </li>
-            <li class="advantage-item">
-              <div class="text-wrapper">
-                <h3 class="advantages-title">Мало <br />туристов</h3>
-                <span class="description-number">—№5—</span>
-                <p class="advantage-description">
-                  Большинство едет в Гранд Каньон и толпится там
-                </p>
-              </div>
+            <li class="advantage-item advantage-item-modify">
+              <h3 class="advantages-title">Мало <br />туристов</h3>
+              <span class="description-number">—№5—</span>
+              <p class="advantage-description">
+                Большинство едет в Гранд Каньон и толпится там
+              </p>
             </li>
           </ul>
         </section>
