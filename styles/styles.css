@@ -22,7 +22,7 @@
 
 img {
   width: 100%;
-  height: auto;
+  min-height: auto;
 }
 
 html {
@@ -61,13 +61,6 @@ body {
   margin: 0;
 }
 
-.navigation-logo {
-  z-index: 1;
-  display: flex;
-  position: absolute;
-  left: 70px;
-  top: 0px;
-}
 /*Кнопка коричневый цвет*/
 
 .button {
@@ -85,6 +78,7 @@ body {
   margin: 0;
   width: 140px;
   height: 37px;
+  border: 0;
 }
 
 /*голубая кнопка*/
@@ -138,15 +132,22 @@ body {
 }
 
 /*Ссылки навигации в header*/
+.navigation-logo {
+  z-index: 1;
+  display: flex;
+  position: absolute;
+  left: 70px;
+  top: 0px;
+}
 
 .page-header {
-  display: flex;
   padding: 0 70px 0 239px;
   position: relative;
 }
 
 .navigation {
   display: flex;
+  justify-content: space-between;
 }
 
 .navigation-list {
@@ -179,8 +180,6 @@ body {
   max-width: 300px;
   justify-content: space-between;
 }
-
-/*Кнопка "Хочу сюда"*/
 
 /*Фон добро пожаловать в седону*/
 .welcome-sedona {
@@ -229,6 +228,7 @@ body {
 
 .advantage-image {
   object-fit: cover;
+  min-height: 100%;
 }
 
 .advantage-sedona-reverse {
@@ -338,8 +338,16 @@ body {
 
 /*подписка на рассылку*/
 .subscribe-form {
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: 600px 1fr;
+}
+
+.input-text {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  border-radius: 10px 0 0 10px;
+  background: #f2f2f2;
 }
 
 .subscribe-catalog {
@@ -388,6 +396,7 @@ body {
 /*кнопка подписаться*/
 
 .button-subscribe {
+  border: 0;
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
@@ -399,7 +408,8 @@ body {
 
 /*подвал*/
 .page-footer {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 720px 1fr;
   margin-top: auto;
   padding: 40px 70px 30px 70px;
 }
@@ -434,7 +444,7 @@ body {
 .logo-html {
   display: flex;
   width: 115px;
-  margin: 0;
+  margin-left: auto;
 }
 
 /*Каталог*/
@@ -449,6 +459,7 @@ body {
 
 /*заголовок каталога*/
 .header-inner-title {
+  width: 495px;
   margin: 0;
   font-weight: 700;
   font-size: 60px;
@@ -459,7 +470,8 @@ body {
 /*хлебные крошки*/
 .breadcrums {
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
+  list-style-type: none;
   color: #ffffff;
 }
 
@@ -473,22 +485,33 @@ body {
   color: #ffffff;
   font-size: 20px;
   line-height: 26px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: flex-start;
+}
+
+.filter-item-name {
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.catalog-filter-item:not(:last-child) {
+  margin-bottom: 15px;
 }
 
 .container-left {
   display: flex;
+  flex-wrap: wrap;
+  width: 367px;
+  justify-content: space-between;
 }
 
 .flex-filter-wrapper {
   display: flex;
+  justify-content: space-between;
 }
 
 .filter-group {
-  width: 150px;
+  border: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .filter-group-price {
@@ -515,6 +538,8 @@ body {
 
 .catalog-filter-list {
   list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
 .filter-title {
@@ -529,6 +554,7 @@ body {
   font-size: 16px;
   line-height: 20px;
   margin-bottom: 20px;
+  cursor: pointer;
 }
 
 /*кнопка сбросить форму*/
@@ -541,6 +567,7 @@ body {
   border: none;
   font: inherit;
   background-color: transparent;
+  cursor: pointer;
 }
 
 /*резульат фильтра*/
@@ -576,11 +603,19 @@ body {
 }
 
 .hotel-card {
-  display: flex;
-  flex-direction: column;
+  display: grid;
   align-items: center;
-  justify-content: center;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px 20px;
   padding: 20px;
+}
+
+.hotel-card-link {
+  grid-column: 1 / -1;
+}
+
+.type-of-housing {
+  grid-column: 1 / 2;
 }
 
 .select-filter {
@@ -616,18 +651,23 @@ body {
 .hotel-card-title {
   font-size: 24px;
   line-height: 28px;
+  margin: 16px 0 0 0;
 }
-
 .hotel-card-link {
   text-decoration: none;
   color: #000000;
 }
 
 .rating-hotel {
+  width: 140px;
+  height: 37px;
+  padding: 9px 22px;
   font-size: 16px;
   line-height: 20px;
   text-align: center;
   text-transform: uppercase;
+  background: #f2f2f2;
+  border-radius: 4px;
 }
 
 /*пагинация*/
