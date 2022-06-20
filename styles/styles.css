@@ -521,7 +521,6 @@ body {
 
 .flex-price-wrapper {
   display: flex;
-  align-items: center;
   margin-left: 70px;
 }
 
@@ -533,6 +532,7 @@ body {
 .buttons-filter {
   margin-left: 70px;
   display: flex;
+  justify-content: center;
   flex-direction: column;
 }
 
@@ -544,6 +544,8 @@ body {
 
 .filter-title {
   font-weight: 700;
+  padding: 0;
+  margin-bottom: 30px;
 }
 
 /*кнопка применить*/
