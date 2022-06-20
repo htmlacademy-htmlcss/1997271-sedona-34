@@ -253,11 +253,15 @@ body {
 }
 
 .advantage-card-item {
+  display: grid;
   padding: 92px 85px;
+  gap: 30px;
 }
 
 .advantage-item {
+  display: grid;
   padding: 80px 85px;
+  gap: 30px;
 }
 
 .advantage-item-modify {
@@ -272,16 +276,16 @@ body {
 
 .description-card-number {
   display: block;
-  margin: 0 0 30px 0;
+  margin: 0;
 }
 
 .description-number {
   display: block;
-  margin: 0 0 30px 0;
+  margin: 0;
 }
 
 .advantages-card-title {
-  margin: 0 0 30px 0;
+  margin: 0;
   font-size: 24px;
   line-height: 28px;
   font-weight: 700;
@@ -289,7 +293,7 @@ body {
 }
 
 .advantages-title {
-  margin: 0 0 30px 0;
+  margin: 0;
   font-size: 24px;
   line-height: 28px;
   font-weight: 700;
