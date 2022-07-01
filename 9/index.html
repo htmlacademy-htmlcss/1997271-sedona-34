@@ -282,127 +282,81 @@
         </a>
       </footer>
       <div class="modal-container visually-hidden">
-        <div class="modal modal-search">
-          <button class="modal-close" aria-label="Закрыть">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="13"
-              height="13"
-              aria-hidden="true"
-              focusable="false"
-              viewBox="0 0 13 13"
-            >
-              <path
-                d="M13 1.2 11.8 0 6.5 5.3 1.2 0 0 1.2l5.3 5.3L0 11.8 1.2 13l5.3-5.3 5.3 5.3 1.2-1.2-5.3-5.3L13 1.2Z"
-              />
-            </svg>
-          </button>
-          <section class="modal-content">
-            <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
-            <form
-              class="modal-form"
-              action="https://echo.htmlacademy.ru/"
-              method="post"
-            >
-              <div class="input-wrapp">
-                <label class="modal-label" for="arrival-date">
-                  Дата Заезда:
-                  <input
-                    class="modal-input"
-                    type="text"
-                    id="arrival-date"
-                    name="arrival-date"
-                    placeholder="Укажите дату"
-                  />
-                  <span class="error-message"
-                    >Мы не можем отправить вас в прошлое.</span
-                  >
-                </label>
+      <div class="modal">
+        <button class="modal-close-button">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+        <section class="modal-content">
+          <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+          <form
+            class="searh-form"
+            action="https://echo.htmlacademy.ru/"
+            method="post"
+          >
+            <div class="field-group">
+              <label class="label-input" for="arrival-date">Дата Заезда:</label>
+              <div class="date-calendar">
+                <input
+                  class="arrival-date field-modal"
+                  type="text"
+                  id="arrival-date"
+                  name="arrival-date"
+                  placeholder="27 апреля 2020"
+                />
+                <button class="date-button date-arrival" type="button"></button>
+                <span class="error-message"
+                  >Мы не можем отправить вас в прошлое.</span
+                >
               </div>
-              <div class="input-wrapp">
-                <label class="modal-label" for="departure-date">
-                  Дата Выезда:
-                  <input
-                    class="modal-input"
-                    type="text"
-                    id="departure-date"
-                    name="departure-date"
-                    placeholder="Укажите дату"
-                  />
-                  <span class="succses-message"
-                    >На эти даты есть свободные номера. Пока есть.</span
-                  >
-                </label>
+            </div>
+            <div class="field-group">
+              <label class="label-input" for="departute-date"
+                >Дата Выезда:</label
+              >
+              <div class="date-calendar">
+                <input
+                  class="departute-date field-modal"
+                  type="text"
+                  id="departute-date"
+                  name="departute-date"
+                  placeholder="1 сентября 2021"
+                />
+                <button
+                  class="date-button date-departute"
+                  type="button"
+                ></button>
+                <span class="successful-message"
+                  >На эти даты есть свободные номера. Пока есть.</span
+                >
               </div>
-              <div class="number-visitors">
-                <div class="right-column">
-                  <label class="modal-label modal-label-count" for="child">
-                    Взрослые:
-                    <input
-                      class="modal-input-people"
-                      type="text"
-                      id="child"
-                      name="child"
-                      placeholder="1"
-                      value="2"
-                      maxlength="1"
-                    />
-                  </label>
-                  <button
-                    class="button-count button-plus"
-                    type="button"
-                    aria-label="Добавить взрослого"
-                  >
-                    <svg
-                      class="svg-icon"
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="13"
-                      height="13"
-                      aria-hidden="true"
-                      focusable="false"
-                      viewBox="0 0 13 13"
-                    >
-                      <path d="M13 6H7V0H6v6H0v1h6v6h1V7h6V6Z" />
-                    </svg>
-                  </button>
-                  <button
-                    class="button-count button-minus"
-                    type="button"
-                    aria-label="Удалить взрослого"
-                  >
-                    <svg
-                      class="svg-icon"
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="13"
-                      height="1"
-                      aria-hidden="true"
-                      focusable="false"
-                      viewBox="0 0 13 1"
-                    >
-                      <path d="M0 0v1h13V0H0Z" />
-                    </svg>
-                  </button>
+            </div>
+            <div class="control-block">
+              <div class="control-group">
+                <label class="label-input" for="adult">Взрослые:</label>
+                <div class="button-control">
+                  <input
+                    class="people-field field-modal"
+                    type="text"
+                    id="adult"
+                    name="adult"
+                    placeholder="1"
+                    maxlength="1"
+                  />
+                  <button class="button-count button-plus" type="button"></button>
+                  <button class="button-count button-minus" type="button"></button>
                 </div>
-                <div class="left-column">
-                  <label class="modal-label modal-label-count" for="adult">
-                    Дети:
-                    <input
-                      class="modal-input-people"
-                      type="text"
-                      id="adult"
-                      name="adult"
-                      placeholder="1"
-                      value="1"
-                      maxlength="1"
-                    />
-                  </label>
-                  <span class="tooltip tooltip-label-icon">
+              </div>
+              <div class="control-group">
+                <span class="label-input">
+                  <label class="label-input" for="child">Дети:</label>
+                  <span class="tooltip">
                     <button
                       class="tooltip-toggle"
                       type="button"
                       aria-labelledby="tooltip-label"
                     >
                       <svg
+                        class="tooltip-icon"
                         xmlns="http://www.w3.org/2000/svg"
                         width="1"
                         height="9"
@@ -420,48 +374,26 @@
                       бесплатно.</span
                     >
                   </span>
-                  <button
-                    class="button-count button-plus"
-                    type="button"
-                    aria-label="Добавить ребенка"
-                  >
-                    <svg
-                      class="svg-icon"
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="13"
-                      height="13"
-                      aria-hidden="true"
-                      focusable="false"
-                      viewBox="0 0 13 13"
-                    >
-                      <path d="M13 6H7V0H6v6H0v1h6v6h1V7h6V6Z" />
-                    </svg>
-                  </button>
-                  <button
-                    class="button-count button-minus"
-                    type="button"
-                    aria-label="Удалить ребенка"
-                  >
-                    <svg
-                      class="svg-icon"
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="13"
-                      height="1"
-                      aria-hidden="true"
-                      focusable="false"
-                      viewBox="0 0 13 1"
-                    >
-                      <path d="M0 0v1h13V0H0Z" />
-                    </svg>
-                  </button>
+                </span>
+                <div class="button-control">
+                  <input
+                    class="people-field field-modal"
+                    type="text"
+                    id="child"
+                    name="child"
+                    placeholder="2"
+                    maxlength="1"
+                  />
+                  <button class="button-count button-plus" type="button"></button>
+                  <button class="button-count button-minus" type="button"></button>
                 </div>
               </div>
-              <button class="button-blue button-modal" type="submit">
-                Найти
-              </button>
-            </form>
-          </section>
-        </div>
+            </div>
+            <button class="button-blue button-submit" type="submit">Найти</button>
+          </form>
+        </section>
+      </div>
+    </div>
       </div>
     </div>
   </body>
