@@ -282,8 +282,7 @@
       </footer>
       <div class="modal-container visually-hidden">
       <div class="modal">
-        <button class="modal-close-button">
-          <span class="visually-hidden">Закрыть</span>
+        <button class="modal-close-button" aria-label="Закрыть">
         </button>
         <section class="modal-content">
           <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
@@ -302,7 +301,7 @@
                   name="arrival-date"
                   placeholder="27 апреля 2020"
                 />
-                <button class="date-button date-arrival" type="button"></button>
+                <button class="date-button date-arrival" type="button" aria-label="Открыть календарь даты заезда"></button>
                 <span class="error-message"
                   >Мы не можем отправить вас в прошлое.</span
                 >
@@ -323,6 +322,7 @@
                 <button
                   class="date-button date-departute"
                   type="button"
+                  aria-label="Открыть календарь даты выезда"
                 ></button>
                 <span class="successful-message"
                   >На эти даты есть свободные номера. Пока есть.</span
@@ -341,8 +341,8 @@
                     placeholder="1"
                     maxlength="1"
                   />
-                  <button class="button-count button-plus" type="button"></button>
-                  <button class="button-count button-minus" type="button"></button>
+                  <button class="button-count button-plus" type="button" aria-label="Добавить взрослого человека"></button>
+                  <button class="button-count button-minus" type="button" aria-label="Удалить взрослого человека"></button>
                 </div>
               </div>
               <div class="control-group">
@@ -360,6 +360,8 @@
                         width="1"
                         height="9"
                         fill="none"
+                        focusable="false"
+                fill="#83B3D3"
                         viewBox="0 0 1 9"
                       >
                         <g fill="#fff" clip-path="url(#a)">
@@ -383,8 +385,8 @@
                     placeholder="2"
                     maxlength="1"
                   />
-                  <button class="button-count button-plus" type="button"></button>
-                  <button class="button-count button-minus" type="button"></button>
+                  <button class="button-count button-plus" type="button" aria-label="Добавить ребенка"></button>
+                  <button class="button-count button-minus" type="button" aria-label="Удалить ребенка"></button>
                 </div>
               </div>
             </div>
