@@ -25,7 +25,7 @@
               <a class="navigation-link navigation-link-current">Главная</a>
             </li>
             <li class="navigation-items">
-              <a class="navigation-link" href="">О Седоне</a>
+              <a class="navigation-link" href="#">О Седоне</a>
             </li>
             <li class="navigation-items">
               <a class="navigation-link" href="catalog.html">Гостиницы</a>
@@ -280,121 +280,154 @@
           </svg>
         </a>
       </footer>
-      <div class="modal-container visually-hidden">
-      <div class="modal">
-        <button class="modal-close-button" aria-label="Закрыть">
-        </button>
-        <section class="modal-content">
-          <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
-          <form
-            class="searh-form"
-            action="https://echo.htmlacademy.ru/"
-            method="post"
-          >
-            <div class="field-group">
-              <label class="label-input" for="arrival-date">Дата Заезда:</label>
-              <div class="date-calendar">
-                <input
-                  class="arrival-date field-modal"
-                  type="text"
-                  id="arrival-date"
-                  name="arrival-date"
-                  placeholder="27 апреля 2020"
-                />
-                <button class="date-button date-arrival" type="button" aria-label="Открыть календарь даты заезда"></button>
-                <span class="error-message"
-                  >Мы не можем отправить вас в прошлое.</span
+      <!--Для открытия модальное окна на modal-container нужно добавить класс is-open-->
+      <div class="modal-container">
+        <div class="modal">
+          <button class="modal-close-button" aria-label="Закрыть"></button>
+          <section class="modal-content">
+            <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+            <form
+              class="searh-form"
+              action="https://echo.htmlacademy.ru/"
+              method="post"
+            >
+              <!--Чтобы добавить сообщение об ошибке на field-group нужно добавить класс is-invalid-->
+              <div class="field-group">
+                <label class="label-input" for="arrival-date"
+                  >Дата Заезда:</label
                 >
-              </div>
-            </div>
-            <div class="field-group">
-              <label class="label-input" for="departute-date"
-                >Дата Выезда:</label
-              >
-              <div class="date-calendar">
-                <input
-                  class="departute-date field-modal"
-                  type="text"
-                  id="departute-date"
-                  name="departute-date"
-                  placeholder="1 сентября 2021"
-                />
-                <button
-                  class="date-button date-departute"
-                  type="button"
-                  aria-label="Открыть календарь даты выезда"
-                ></button>
-                <span class="successful-message"
-                  >На эти даты есть свободные номера. Пока есть.</span
-                >
-              </div>
-            </div>
-            <div class="control-block">
-              <div class="control-group">
-                <label class="label-input" for="adult">Взрослые:</label>
-                <div class="button-control">
+                <div class="date-calendar">
                   <input
-                    class="people-field field-modal"
+                    class="arrival-date field-modal"
                     type="text"
-                    id="adult"
-                    name="adult"
-                    placeholder="1"
-                    maxlength="1"
+                    id="arrival-date"
+                    name="arrival-date"
+                    placeholder="27 апреля 2020"
                   />
-                  <button class="button-count button-plus" type="button" aria-label="Добавить взрослого человека"></button>
-                  <button class="button-count button-minus" type="button" aria-label="Удалить взрослого человека"></button>
+                  <button
+                    class="date-button date-arrival"
+                    type="button"
+                    aria-label="Открыть календарь даты заезда"
+                  ></button>
+                  <span class="error-message"
+                    >Мы не можем отправить вас в прошлое.</span
+                  >
+                  <span class="successful-message"
+                    >На эти даты есть свободные номера. Пока есть.</span
+                  >
                 </div>
               </div>
-              <div class="control-group">
-                <span class="label-input">
-                  <label class="label-input" for="child">Дети:</label>
-                  <span class="tooltip">
+              <!--Чтобы добавить сообщение о успешном заполение на field-group нужно добавить класс is-valid-->
+              <div class="field-group">
+                <label class="label-input" for="departute-date"
+                  >Дата Выезда:</label
+                >
+                <div class="date-calendar">
+                  <input
+                    class="departute-date field-modal"
+                    type="text"
+                    id="departute-date"
+                    name="departute-date"
+                    placeholder="1 сентября 2021"
+                  />
+                  <button
+                    class="date-button date-departute"
+                    type="button"
+                    aria-label="Открыть календарь даты выезда"
+                  ></button>
+                  <span class="successful-message"
+                    >На эти даты есть свободные номера. Пока есть.</span
+                  >
+                  <span class="error-message"
+                    >Мы не можем отправить вас в прошлое.</span
+                  >
+                </div>
+              </div>
+              <div class="control-block">
+                <div class="control-group">
+                  <label class="label-input" for="adult">Взрослые:</label>
+                  <div class="button-control">
+                    <input
+                      class="people-field field-modal"
+                      type="text"
+                      id="adult"
+                      name="adult"
+                      placeholder="2"
+                      maxlength="1"
+                    />
                     <button
-                      class="tooltip-toggle"
+                      class="button-count button-plus"
                       type="button"
-                      aria-labelledby="tooltip-label"
-                    >
-                      <svg
-                        class="tooltip-icon"
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="1"
-                        height="9"
-                        fill="none"
-                        focusable="false"
-                fill="#83B3D3"
-                        viewBox="0 0 1 9"
+                      aria-label="Добавить взрослого человека"
+                    ></button>
+                    <button
+                      class="button-count button-minus"
+                      type="button"
+                      aria-label="Удалить взрослого человека"
+                    ></button>
+                  </div>
+                </div>
+                <div class="control-group">
+                  <span class="label-input">
+                    <label class="label-input" for="child">Дети:</label>
+                    <span class="tooltip">
+                      <button
+                        class="tooltip-toggle"
+                        type="button"
+                        aria-labelledby="tooltip-label"
                       >
-                        <g fill="#fff" clip-path="url(#a)">
-                          <path d="M0 9h1V3H0v6ZM1 0H0v1h1V0Z" />
-                        </g>
-                      </svg>
-                    </button>
-                    <span class="tooltip-text" role="tooltip" id="tooltip-label"
-                      >Укажите количество детей, которые будут с вами, возраст
-                      которых от 6 до 18 лет. Дети до 6 лет размещаются
-                      бесплатно.</span
-                    >
+                        <svg
+                          class="tooltip-icon"
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="1"
+                          height="9"
+                          fill="none"
+                          focusable="false"
+                          viewBox="0 0 1 9"
+                        >
+                          <g fill="#fff" clip-path="url(#a)">
+                            <path d="M0 9h1V3H0v6ZM1 0H0v1h1V0Z" />
+                          </g>
+                        </svg>
+                      </button>
+                      <span
+                        class="tooltip-text"
+                        role="tooltip"
+                        id="tooltip-label"
+                        >Укажите количество детей, которые будут с вами, возраст
+                        которых от 6 до 18 лет. Дети до 6 лет размещаются
+                        бесплатно.</span
+                      >
+                    </span>
                   </span>
-                </span>
-                <div class="button-control">
-                  <input
-                    class="people-field field-modal"
-                    type="text"
-                    id="child"
-                    name="child"
-                    placeholder="2"
-                    maxlength="1"
-                  />
-                  <button class="button-count button-plus" type="button" aria-label="Добавить ребенка"></button>
-                  <button class="button-count button-minus" type="button" aria-label="Удалить ребенка"></button>
+                  <div class="button-control">
+                    <input
+                      class="people-field field-modal"
+                      type="text"
+                      id="child"
+                      name="child"
+                      placeholder="1"
+                      maxlength="1"
+                    />
+                    <button
+                      class="button-count button-plus"
+                      type="button"
+                      aria-label="Добавить ребенка"
+                    ></button>
+                    <button
+                      class="button-count button-minus"
+                      type="button"
+                      aria-label="Удалить ребенка"
+                    ></button>
+                  </div>
                 </div>
               </div>
-            </div>
-            <button class="button-blue button-submit" type="submit">Найти</button>
-          </form>
-        </section>
-      </div>
-    </div>
+              <button class="button-blue button-submit" type="submit">
+                Найти
+              </button>
+            </form>
+          </section>
+        </div>
       </div>
     </div>
   </body>
