@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/modal.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="modal-container">
+      <div class="modal modal-auth">
+        <button class="modal-close-button">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+        <section class="modal-content">
+          <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+          <form
+            class="auth-form"
+            action="https://echo.htmlacademy.ru/"
+            method="post"
+          >
+            <div class="field-group">
+              <label class="label-input" for="arrival-date">Дата Заезда:</label>
+              <div class="date-calendar">
+                <input
+                  class="arrival-date field"
+                  type="text"
+                  id="arrival-date"
+                  name="arrival-date"
+                  placeholder="27 апреля 2020"
+                />
+                <button class="date-button date-arrival" type="button"></button>
+                <span class="error-message"
+                  >Мы не можем отправить вас в прошлое.</span
+                >
+              </div>
+            </div>
+            <div class="field-group">
+              <label class="label-input" for="departute-date"
+                >Дата Выезда:</label
+              >
+              <div class="date-calendar">
+                <input
+                  class="departute-date field"
+                  type="text"
+                  id="departute-date"
+                  name="departute-date"
+                  placeholder="1 сентября 2021"
+                />
+                <button
+                  class="date-button date-departute"
+                  type="button"
+                ></button>
+                <span class="successful-message"
+                  >На эти даты есть свободные номера. Пока есть.</span
+                >
+              </div>
+            </div>
+            <div class="control-block">
+              <div class="control-group">
+                <label class="label-input" for="adult">Взрослые:</label>
+                <div class="button-control">
+                  <input
+                    class="people-field field"
+                    type="text"
+                    id="adult"
+                    name="adult"
+                    placeholder="1"
+                    maxlength="1"
+                  />
+                  <button class="button button-plus" type="button"></button>
+                  <button class="button button-minus" type="button"></button>
+                </div>
+              </div>
+              <div class="control-group">
+                <span class="label-input">
+                  <label class="label-input" for="child">Дети:</label>
+                  <span class="tooltip">
+                    <button
+                      class="tooltip-toggle"
+                      type="button"
+                      aria-labelledby="tooltip-label"
+                    >
+                      <svg
+                        class="tooltip-icon"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="1"
+                        height="9"
+                        fill="none"
+                        viewBox="0 0 1 9"
+                      >
+                        <g fill="#fff" clip-path="url(#a)">
+                          <path d="M0 9h1V3H0v6ZM1 0H0v1h1V0Z" />
+                        </g>
+                      </svg>
+                    </button>
+                    <span class="tooltip-text" role="tooltip" id="tooltip-label"
+                      >Укажите количество детей, которые будут с вами, возраст
+                      которых от 6 до 18 лет. Дети до 6 лет размещаются
+                      бесплатно.</span
+                    >
+                  </span>
+                </span>
+                <div class="button-control">
+                  <input
+                    class="people-field field"
+                    type="text"
+                    id="child"
+                    name="child"
+                    placeholder="2"
+                    maxlength="1"
+                  />
+                  <button class="button button-plus" type="button"></button>
+                  <button class="button button-minus" type="button"></button>
+                </div>
+              </div>
+            </div>
+            <button class="button-sumbit" type="submit">Найти</button>
+          </form>
+        </section>
+      </div>
+    </div>
+  </body>
+</html>
