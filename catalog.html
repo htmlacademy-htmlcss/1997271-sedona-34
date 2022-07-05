@@ -4,6 +4,8 @@
     <meta charset="utf-8" />
     <link rel="stylesheet" href="styles/styles.css" />
     <title>HTML Academy: Седона</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png" />
   </head>
   <body>
     <div class="page-wrapper">
@@ -133,7 +135,7 @@
                           <input
                             class="visually-hidden checkbox-filter"
                             type="radio"
-                            name="filter-group-name"
+                            name="housing-type"
                             value="hotel"
                             checked
                           />
@@ -146,7 +148,7 @@
                           <input
                             class="visually-hidden checkbox-filter"
                             type="radio"
-                            name="filter-group-name"
+                            name="housing-type"
                             value="motel"
                           />
                           <span class="control-mark"></span>
@@ -158,11 +160,11 @@
                           <input
                             class="visually-hidden checkbox-filter"
                             type="radio"
-                            name="filter-group-name"
+                            name="housing-type"
                             value="appartaments"
                           />
                           <span class="control-mark"></span>
-                          <span class="label-control">Апаратаменты</span>
+                          <span class="label-control">Апартаменты</span>
                         </label>
                       </li>
                     </ul>
@@ -173,24 +175,28 @@
                   <fieldset class="filter-group filter-group-price">
                     <legend class="filter-title-price">Стоимость, ₽:</legend>
                     <div class="wrap-input">
-                      <label class="filter-group-label">
+                      <label
+                        class="filter-group-label"
+                        aria-label="Минимальная цена"
+                      >
                         <input
                           class="min-max-price min-price"
                           type="text"
                           id="min-price"
                           name="min-price"
-                          value="0"
                           placeholder="0"
                         />
                         <span class="price">от</span>
                       </label>
-                      <label class="filter-group-label">
+                      <label
+                        class="filter-group-label"
+                        aria-label="Максимальная цена"
+                      >
                         <input
                           class="min-max-price max-price"
                           type="text"
                           id="max-price"
                           name="max-price"
-                          value="9000"
                           placeholder="9000"
                         />
                         <span class="price">до</span>
@@ -202,10 +208,12 @@
                           <button
                             type="button"
                             class="range-toggle toggle-min"
+                            aria-label="Выставить минимальную цену"
                           ></button>
                           <button
                             type="button"
                             class="range-toggle toggle-max"
+                            aria-label="Выставить максимальную цену"
                           ></button>
                         </div>
                       </div>
@@ -282,12 +290,14 @@
                 />
                 <h3 class="hotel-card-title">Amara Resort & Spa</h3>
               </a>
-              <span class="type-of-housing">Гостиница</span>
-              <span class="price-of-housing">От 4000 ₽</span>
-              <a class="more-info-button button" href="#">Подробнее</a>
-              <a class="to-favorites button-blue" href="#">В избранное</a>
-              <div class="comfort-hotel-star four-stars"></div>
-              <span class="rating-hotel">Рейтинг: 8,5</span>
+              <div class="grid-content">
+                <span class="type-of-housing">Гостиница</span>
+                <span class="price-of-housing">От 4000 ₽</span>
+                <a class="more-info-button button" href="#">Подробнее</a>
+                <a class="to-favorites button-blue" href="#">В избранное</a>
+                <div class="comfort-hotel-star four-stars"></div>
+                <span class="rating-hotel">Рейтинг: 8,5</span>
+              </div>
             </li>
             <li class="hotel-card">
               <a class="hotel-card-link" href="#">
@@ -300,12 +310,14 @@
                 />
                 <h3 class="hotel-card-title">Villas at Poco Diablo</h3>
               </a>
-              <span class="type-of-housing">Гостиница</span>
-              <span class="price-of-housing">От 5000 ₽</span>
-              <a class="more-info-button button" href="#">Подробнее</a>
-              <a class="in-favorites button-green" href="#">В избранном</a>
-              <div class="comfort-hotel-star four-stars"></div>
-              <span class="rating-hotel">Рейтинг: 9,2</span>
+              <div class="grid-content">
+                <span class="type-of-housing">Гостиница</span>
+                <span class="price-of-housing">От 5000 ₽</span>
+                <a class="more-info-button button" href="#">Подробнее</a>
+                <a class="in-favorites button-green" href="#">В избранном</a>
+                <div class="comfort-hotel-star four-stars"></div>
+                <span class="rating-hotel">Рейтинг: 9,2</span>
+              </div>
             </li>
             <li class="hotel-card">
               <a class="hotel-card-link" href="#">
@@ -318,12 +330,14 @@
                 />
                 <h3 class="hotel-card-title">Desert Quail Inn</h3>
               </a>
-              <span class="type-of-housing">Гостиница</span>
-              <span class="price-of-housing">От 2500 ₽</span>
-              <a class="more-info-button button" href="#">Подробнее</a>
-              <a class="to-favorites button-blue" href="#">В избранное</a>
-              <div class="comfort-hotel-star three-stars"></div>
-              <span class="rating-hotel">Рейтинг: 6,9</span>
+              <div class="grid-content">
+                <span class="type-of-housing">Гостиница</span>
+                <span class="price-of-housing">От 2500 ₽</span>
+                <a class="more-info-button button" href="#">Подробнее</a>
+                <a class="to-favorites button-blue" href="#">В избранное</a>
+                <div class="comfort-hotel-star three-stars"></div>
+                <span class="rating-hotel">Рейтинг: 6,9</span>
+              </div>
             </li>
             <li class="hotel-card">
               <a class="hotel-card-link" href="#">
@@ -336,12 +350,14 @@
                 />
                 <h3 class="hotel-card-title">GreenTree Inn</h3>
               </a>
-              <span class="type-of-housing">Гостиница</span>
-              <span class="price-of-housing">От 1500 ₽</span>
-              <a class="more-info-button button" href="#">Подробнее</a>
-              <a class="to-favorites button-blue" href="#">В избранное</a>
-              <div class="comfort-hotel-star two-stars"></div>
-              <span class="rating-hotel">Рейтинг: 5,0</span>
+              <div class="grid-content">
+                <span class="type-of-housing">Гостиница</span>
+                <span class="price-of-housing">От 1500 ₽</span>
+                <a class="more-info-button button" href="#">Подробнее</a>
+                <a class="to-favorites button-blue" href="#">В избранное</a>
+                <div class="comfort-hotel-star two-stars"></div>
+                <span class="rating-hotel">Рейтинг: 5,0</span>
+              </div>
             </li>
           </ul>
           <!--Пагинация-->
@@ -414,7 +430,7 @@
           <h2 class="subscribe-title subscribe-title-catalog">
             Подпишитесь на рассылку
           </h2>
-          <p class="subscribe-descriprtion subscribe-descriprtion-catalog">
+          <p class="subscribe-description subscribe-description-catalog">
             Только полезная информация и никакого спама, честное бойскаутское!
           </p>
           <form
@@ -423,11 +439,12 @@
             method="post"
           >
             <input
-              class="input-subcribe"
-              type="text"
-              name="subscribe-email"
+              class="input-subscribe"
+              type="email"
+              name="email"
               placeholder="Ваш e-mail"
               aria-label="Введите ваш email-адрес"
+              required
             />
             <button class="button-subscribe button-blue" type="submit">
               Подписаться
@@ -514,7 +531,11 @@
           aria-label="Телефон для связи"
           >+7 (812) 812-12-12</a
         >
-        <a class="logo-html" href="https://htmlacademy.ru/">
+        <a
+          class="logo-html"
+          href="https://htmlacademy.ru/"
+          aria-label="Сайт HtmlAcademy"
+        >
           <svg
             class="logo-html-academy"
             width="115"

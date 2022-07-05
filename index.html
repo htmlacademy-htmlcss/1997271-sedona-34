@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="styles/styles.css" />
     <title>HTML Academy: Седона</title>
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png" />
   </head>
   <body>
     <div class="page-wrapper">
@@ -153,8 +154,8 @@
         <section class="search-hotel">
           <h2 class="search-hotel-title">Заинтересовались?</h2>
           <p class="search-hotel-description">
-            Укажите предполагаемые даты поездки,<br />
-            и мы покажем вам лучшие предложения гостиниц в Седоне
+            Укажите предполагаемые даты поездки,<br />и мы покажем вам лучшие
+            предложения гостиниц в Седоне&nbsp;&nbsp;
           </p>
           <a class="button button-search-hotel" href="#">
             Поиск гостиницы в Седоне
@@ -164,7 +165,7 @@
         <div class="subscribe-background">
           <section class="subscribe">
             <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
-            <p class="subscribe-descriprtion">
+            <p class="subscribe-description">
               Только полезная информация и никакого спама, честное бойскаутское!
             </p>
             <form
@@ -173,11 +174,12 @@
               method="post"
             >
               <input
-                class="input-subcribe"
-                type="text"
-                name="subscribe-email"
+                class="input-subscribe"
+                type="email"
+                name="email"
                 placeholder="Ваш e-mail"
                 aria-label="Введите ваш email-адрес"
+                required
               />
               <button class="button-subscribe button-blue" type="submit">
                 Подписаться
@@ -265,7 +267,11 @@
           aria-label="Телефон для связи"
           >+7 (812) 812-12-12</a
         >
-        <a class="logo-html" href="https://htmlacademy.ru/">
+        <a
+          class="logo-html"
+          href="https://htmlacademy.ru/"
+          aria-label="Сайт HtmlAcademy"
+        >
           <svg
             class="logo-html-academy"
             width="115"
@@ -303,6 +309,7 @@
                     id="arrival-date"
                     name="arrival-date"
                     placeholder="27 апреля 2020"
+                    required
                   />
                   <button
                     class="date-button date-arrival"
@@ -329,6 +336,7 @@
                     id="departute-date"
                     name="departute-date"
                     placeholder="1 сентября 2021"
+                    required
                   />
                   <button
                     class="date-button date-departute"
@@ -354,6 +362,7 @@
                       name="adult"
                       placeholder="2"
                       maxlength="1"
+                      required
                     />
                     <button
                       class="button-count button-plus"
