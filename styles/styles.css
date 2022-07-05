@@ -809,16 +809,10 @@ body {
   background: rgba(255, 255, 255, 0.6);
 }
 
-.filter-item:focus .control-mark {
-  outline: 3px solid #83b3d3;
-}
-
 .filter-item:active .control-mark {
   background: rgba(255, 255, 255, 0.3);
-}
-
-.checkbox-filter[type="checkbox"]:disabled + .control-mark {
-  background: rgba(255, 255, 255, 0.1);
+  filter: drop-shadow(0 7px 15px 0 rgba(0, 0, 0, 0.4));
+  box-shadow: 0 0 0 2px #81b3d2;
 }
 
 .catalog-filter-item:not(:last-child) {
@@ -837,8 +831,13 @@ body {
 }
 
 .checkbox-filter[type="checkbox"]:focus + .control-mark {
-  -webkit-box-shadow: 0 0 0 2px #81b3d2;
-  box-shadow: 0 0 0 2px #81b3d2;
+  -webkit-box-shadow: 0 0 0 3px #81b3d2;
+  box-shadow: 0 0 0 3px #81b3d2;
+  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.checkbox-filter[type="checkbox"]:disabled + .control-mark {
+  background: rgba(255, 255, 255, 0.1);
 }
 
 .checkbox-filter[type="radio"] + .control-mark {
@@ -856,13 +855,14 @@ body {
   left: 5px;
 }
 
-.checkbox-filter[type="radio"]:disabled + .control-mark {
-  background: rgba(255, 255, 255, 0.1);
+.checkbox-filter[type="radio"]:focus + .control-mark {
+  -webkit-box-shadow: 0 0 0 3px #81b3d2;
+  box-shadow: 0 0 0 3px #81b3d2;
+  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
 }
 
-.checkbox-filter[type="radio"]:focus + .control-mark {
-  -webkit-box-shadow: 0 0 0 2px #81b3d2;
-  box-shadow: 0 0 0 2px #81b3d2;
+.checkbox-filter[type="radio"]:disabled + .control-mark {
+  background: rgba(255, 255, 255, 0.1);
 }
 
 .range-scale {
